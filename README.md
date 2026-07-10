@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Айгерім & Амирхан — Premium Wedding Invitation
+
+Luxury Kazakhstan wedding invitation website built with Next.js 15, TypeScript, TailwindCSS, Framer Motion, GSAP, and Firebase.
+
+## Features
+
+- 14 premium sections (Hero, Invitation, Story, Countdown, Event, Venue, Gallery, Video, RSVP, Wishes, Gift, Family, FAQ, Footer)
+- Kazakh national ornaments & Shanyraq symbol
+- Glassmorphism luxury design
+- Golden particles, cursor glow, magnetic buttons
+- Firebase Firestore + Storage integration
+- Full Admin Dashboard
+- PWA ready with manifest & service worker
+- SEO optimized with structured data
+- Mobile-first responsive design
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+cd wedding
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Admin panel: [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Default credentials (demo mode): `admin@wedding.kz` / `admin123`
 
-## Learn More
+## Firebase Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Enable Authentication (Email/Password), Firestore, and Storage
+3. Copy `.env.example` to `.env.local` and fill in your Firebase config
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 15
+- TypeScript
+- TailwindCSS 4
+- Framer Motion
+- GSAP
+- Swiper.js
+- React Hook Form
+- Firebase
+- Zustand
 
-## Deploy on Vercel
+## Color Palette
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Color | Hex |
+|-------|-----|
+| Deep Emerald | `#0D352D` |
+| Dark Forest | `#123A32` |
+| Luxury Gold | `#C99A3D` |
+| Soft Gold | `#F2D58A` |
+| Ivory | `#FFF8EF` |
+| Warm Cream | `#F5EEDD` |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+src/
+├── app/              # Next.js app router
+├── components/
+│   ├── admin/        # Admin dashboard components
+│   ├── effects/      # Visual effects
+│   ├── layout/       # Layout components
+│   ├── sections/     # Wedding page sections
+│   └── ui/           # Reusable UI components
+├── data/             # Default wedding data
+├── lib/              # Utilities & Firebase
+├── store/            # Zustand stores
+└── types/            # TypeScript types
+```

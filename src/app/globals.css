@@ -1,26 +1,162 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --emerald: #0D352D;
+  --forest: #123A32;
+  --gold: #C99A3D;
+  --soft-gold: #F2D58A;
+  --ivory: #FFF8EF;
+  --cream: #F5EEDD;
+  --glass: rgba(255, 248, 239, 0.08);
+  --glass-border: rgba(201, 154, 61, 0.25);
+  --background: var(--emerald);
+  --foreground: var(--ivory);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-emerald: #0D352D;
+  --color-forest: #123A32;
+  --color-gold: #C99A3D;
+  --color-soft-gold: #F2D58A;
+  --color-ivory: #FFF8EF;
+  --color-cream: #F5EEDD;
+  --color-glass: rgba(255, 248, 239, 0.08);
+  --color-glass-border: rgba(201, 154, 61, 0.25);
+  --font-display: var(--font-cinzel);
+  --font-serif: var(--font-cormorant);
+  --font-body: var(--font-montserrat);
+  --font-elegant: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--emerald);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--emerald);
+  color: var(--ivory);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--emerald);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--gold), var(--soft-gold));
+  border-radius: 3px;
+}
+
+::selection {
+  background: rgba(201, 154, 61, 0.35);
+  color: var(--ivory);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #0D352D 0%, #123A32 40%, #0D352D 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C99A3D 0%, #F2D58A 50%, #C99A3D 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #F2D58A 0%, #C99A3D 50%, #F2D58A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.name-glow {
+  filter: drop-shadow(0 0 24px rgba(201, 154, 61, 0.3))
+    drop-shadow(0 0 48px rgba(242, 213, 138, 0.15));
+}
+
+.glass-card {
+  background: rgba(255, 248, 239, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 154, 61, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 248, 239, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(255, 248, 239, 0.92);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 154, 61, 0.3);
+  color: var(--emerald);
+}
+
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 8rem 3rem;
+  }
+}
+
+.ornament-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--soft-gold), var(--gold), transparent);
+}
+
+.shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 154, 61, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(201, 154, 61, 0.5); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+input, textarea, select {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(201, 154, 61, 0.15);
 }
