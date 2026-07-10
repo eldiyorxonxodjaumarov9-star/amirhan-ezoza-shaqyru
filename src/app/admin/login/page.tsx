@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -41,17 +41,17 @@ export default function AdminLoginPage() {
   };
 
   const inputClass =
-    "w-full bg-ivory/5 border border-gold/20 rounded-xl px-4 py-3.5 text-ivory placeholder:text-ivory/30 text-sm";
+    "w-full bg-white border border-gold/25 rounded-xl px-4 py-3.5 text-emerald placeholder:text-emerald/40 text-sm";
 
   return (
     <div className="min-h-screen luxury-gradient flex items-center justify-center px-6">
       <GlassCard className="w-full max-w-md">
         <div className="text-center mb-8">
           <Shanyraq size={60} className="mx-auto mb-4" animate={false} />
-          <h1 className="font-[family-name:var(--font-cinzel)] text-2xl text-ivory tracking-widest">
+          <h1 className="font-[family-name:var(--font-cinzel)] text-2xl text-emerald tracking-widest">
             Admin Panel
           </h1>
-          <p className="font-[family-name:var(--font-montserrat)] text-ivory/40 text-sm mt-2">
+          <p className="font-[family-name:var(--font-montserrat)] text-emerald/40 text-sm mt-2">
             Басқару панеліне кіру
           </p>
         </div>

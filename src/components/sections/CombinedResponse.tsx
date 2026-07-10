@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export function CombinedResponse() {
   }, []);
 
   const inputClass =
-    "w-full bg-ivory/5 border border-gold/20 rounded-xl px-4 py-3.5 text-ivory placeholder:text-ivory/30 text-sm font-light transition-all focus:border-gold/50";
+    "w-full bg-white border border-gold/25 rounded-xl px-4 py-3.5 text-emerald placeholder:text-emerald/40 text-sm font-light transition-all focus:border-gold/50";
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -79,7 +79,7 @@ export function CombinedResponse() {
   const latestResponses = responses.slice(0, 3);
 
   return (
-    <section id="rsvp" className="section-padding relative bg-forest/20">
+    <section id="rsvp" className="section-padding relative bg-gold/5">
       <div className="max-w-[900px] mx-auto px-4">
         <SectionHeading
           title="Тойға келесіз бе?"
@@ -113,7 +113,7 @@ export function CombinedResponse() {
                       className={`flex items-center px-4 py-4 rounded-xl border cursor-pointer transition-all text-sm leading-relaxed ${
                         attendance === opt.value
                           ? "border-gold bg-gold/10 text-gold shadow-[0_0_20px_rgba(201,154,61,0.15)]"
-                          : "border-gold/20 text-ivory/70 hover:border-gold/40"
+                          : "border-gold/20 text-emerald/70 hover:border-gold/40"
                       }`}
                     >
                       <input

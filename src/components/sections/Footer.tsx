@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { HiArrowUp, HiOutlineMusicalNote } from "react-icons/hi2";
@@ -21,7 +21,7 @@ export function Footer() {
       <div className="max-w-3xl mx-auto text-center">
         <Shanyraq size={60} className="mx-auto mb-8 opacity-60" animate={false} />
 
-        <h3 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-5xl text-ivory font-light mb-6 tracking-wide">
+        <h3 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-5xl text-emerald font-light mb-6 tracking-wide">
           {config.closingTitle}
         </h3>
 
@@ -40,7 +40,7 @@ export function Footer() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-ivory/40 hover:text-gold hover:border-gold/40 transition-all"
+            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-emerald/40 hover:text-gold hover:border-gold/40 transition-all"
           >
             <FaInstagram />
           </a>
@@ -48,13 +48,13 @@ export function Footer() {
             href="https://t.me"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-ivory/40 hover:text-gold hover:border-gold/40 transition-all"
+            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-emerald/40 hover:text-gold hover:border-gold/40 transition-all"
           >
             <FaTelegram />
           </a>
           <button
             onClick={toggle}
-            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-ivory/40 hover:text-gold hover:border-gold/40 transition-all"
+            className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center text-emerald/40 hover:text-gold hover:border-gold/40 transition-all"
             aria-label="Toggle music"
           >
             <HiOutlineMusicalNote className={isPlaying ? "text-gold" : ""} />

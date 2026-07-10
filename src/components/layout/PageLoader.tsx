@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -54,7 +54,7 @@ export function PageLoader({ onComplete }: { onComplete: () => void }) {
         </div>
 
         <motion.p
-          className="font-[family-name:var(--font-montserrat)] text-ivory/40 text-xs mt-4 tracking-widest"
+          className="font-[family-name:var(--font-montserrat)] text-emerald/40 text-xs mt-4 tracking-widest"
           animate={{ opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

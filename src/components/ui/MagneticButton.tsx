@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ export function MagneticButton({
       "bg-gradient-to-r from-gold via-soft-gold to-gold text-emerald font-semibold shadow-[0_4px_24px_rgba(201,154,61,0.3)] hover:shadow-[0_8px_32px_rgba(201,154,61,0.5)]",
     outline:
       "border border-gold/50 text-gold hover:bg-gold/10 hover:border-gold",
-    ghost: "text-ivory/80 hover:text-gold hover:bg-ivory/5",
+    ghost: "text-emerald/80 hover:text-gold hover:bg-gold/5",
   };
 
   return (

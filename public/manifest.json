@@ -4,8 +4,8 @@
   "description": "Premium Kazakhstan Wedding Invitation",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0D352D",
-  "theme_color": "#0D352D",
+  "background_color": "#FFFBF7",
+  "theme_color": "#FFFBF7",
   "orientation": "portrait-primary",
   "icons": [
     {

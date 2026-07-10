@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -22,7 +22,7 @@ export function AdminSettings() {
   const [saving, setSaving] = useState(false);
 
   const inputClass =
-    "w-full bg-ivory/5 border border-gold/20 rounded-xl px-4 py-3 text-ivory text-sm";
+    "w-full bg-white border border-gold/25 rounded-xl px-4 py-3 text-emerald text-sm";
 
   const handleSave = async () => {
     setSaving(true);
@@ -71,7 +71,7 @@ export function AdminSettings() {
 
   return (
     <div>
-      <h2 className="font-[family-name:var(--font-cormorant)] text-3xl text-ivory mb-8">
+      <h2 className="font-[family-name:var(--font-cormorant)] text-3xl text-emerald mb-8">
         Баптаулар
       </h2>
 
@@ -107,7 +107,7 @@ export function AdminSettings() {
             type="file"
             accept="audio/*"
             onChange={handleMusicUpload}
-            className="text-ivory/60 text-sm"
+            className="text-emerald/60 text-sm"
           />
         </div>
 

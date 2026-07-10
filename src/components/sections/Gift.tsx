@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -23,13 +23,13 @@ export function Gift() {
   };
 
   return (
-    <section id="gift" className="section-padding relative bg-forest/20">
+    <section id="gift" className="section-padding relative bg-gold/5">
       <div className="max-w-lg mx-auto">
         <SectionHeading title="Сыйлық" subtitle="Тілектеріңіз — ең үлкен сыйлық" />
 
         <ScrollReveal>
           <GlassCard className="text-center">
-            <p className="font-[family-name:var(--font-montserrat)] text-ivory/60 text-sm font-light leading-relaxed mb-8">
+            <p className="font-[family-name:var(--font-montserrat)] text-emerald/60 text-sm font-light leading-relaxed mb-8">
               {gift.message}
             </p>
 
@@ -40,11 +40,11 @@ export function Gift() {
                 {gift.bankName}
               </p>
 
-              <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-ivory tracking-wider">
+              <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-emerald tracking-wider">
                 {gift.cardNumber}
               </p>
 
-              <p className="font-[family-name:var(--font-montserrat)] text-ivory/50 text-sm">
+              <p className="font-[family-name:var(--font-montserrat)] text-emerald/50 text-sm">
                 {gift.cardHolder}
               </p>
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -99,13 +99,13 @@ export default function AdminPage() {
           <Link href="/" className="text-gold/60 hover:text-gold text-sm transition-colors">
             ← Сайтқа оралу
           </Link>
-          <h1 className="font-[family-name:var(--font-cinzel)] text-ivory text-lg tracking-widest hidden sm:block">
+          <h1 className="font-[family-name:var(--font-cinzel)] text-emerald text-lg tracking-widest hidden sm:block">
             Admin Panel
           </h1>
         </div>
         <button
           onClick={handleLogout}
-          className="flex items-center gap-2 text-ivory/50 hover:text-gold text-sm transition-colors"
+          className="flex items-center gap-2 text-emerald/50 hover:text-gold text-sm transition-colors"
         >
           <HiArrowLeftOnRectangle />
           Шығу
@@ -122,7 +122,7 @@ export default function AdminPage() {
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm whitespace-nowrap transition-all ${
                   activeTab === tab.id
                     ? "bg-gold/10 text-gold border border-gold/20"
-                    : "text-ivory/50 hover:text-ivory hover:bg-ivory/5"
+                    : "text-emerald/50 hover:text-emerald hover:bg-ivory/5"
                 }`}
               >
                 <tab.icon className="text-lg" />
@@ -135,17 +135,17 @@ export default function AdminPage() {
         <main className="flex-1 p-6 max-w-5xl">
           {activeTab === "dashboard" && (
             <div>
-              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl text-ivory mb-8">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl text-emerald mb-8">
                 Бақылау тақтасы
               </h2>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {statCards.map((card) => (
                   <GlassCard key={card.label} className="text-center !p-5">
                     <card.icon className="text-gold text-2xl mx-auto mb-3" />
-                    <p className="font-[family-name:var(--font-cinzel)] text-3xl text-ivory">
+                    <p className="font-[family-name:var(--font-cinzel)] text-3xl text-emerald">
                       {card.value}
                     </p>
-                    <p className="font-[family-name:var(--font-montserrat)] text-ivory/40 text-xs mt-1">
+                    <p className="font-[family-name:var(--font-montserrat)] text-emerald/40 text-xs mt-1">
                       {card.label}
                     </p>
                   </GlassCard>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -43,10 +43,10 @@ export function Family() {
                             {member.name.charAt(0)}
                           </span>
                         </div>
-                        <h4 className="font-[family-name:var(--font-cormorant)] text-lg text-ivory">
+                        <h4 className="font-[family-name:var(--font-cormorant)] text-lg text-emerald">
                           {member.name}
                         </h4>
-                        <p className="font-[family-name:var(--font-montserrat)] text-ivory/40 text-xs mt-1 tracking-wide">
+                        <p className="font-[family-name:var(--font-montserrat)] text-emerald/40 text-xs mt-1 tracking-wide">
                           {member.role}
                         </p>
                       </GlassCard>

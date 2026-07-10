@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -13,7 +13,7 @@ export function Invitation() {
 
   return (
     <section id="invitation" className="section-padding relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-emerald via-forest/50 to-emerald" />
+      <div className="absolute inset-0 bg-gradient-to-b from-pearl via-cream/50 to-snow" />
 
       <div className="relative z-10 max-w-3xl mx-auto">
         <SectionHeading title={config.invitationTitle} />
@@ -39,7 +39,7 @@ export function Invitation() {
                   <p className="font-[family-name:var(--font-cinzel)] text-gold text-xs tracking-[0.3em] uppercase mb-4">
                     {config.parentsTitle}
                   </p>
-                  <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-ivory tracking-wide">
+                  <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-emerald tracking-wide">
                     {config.parentsFamily}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ export function Invitation() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, duration: 1 }}
-                  className="font-[family-name:var(--font-cormorant)] text-lg md:text-xl text-ivory/90 leading-relaxed md:leading-[2] font-light px-2 md:px-6 whitespace-pre-line"
+                  className="font-[family-name:var(--font-cormorant)] text-lg md:text-xl text-emerald/90 leading-relaxed md:leading-[2] font-light px-2 md:px-6 whitespace-pre-line"
                 >
                   {config.invitationText}
                 </motion.div>

@@ -15,7 +15,7 @@ export const defaultWeddingConfig: WeddingConfig = {
   closingTitle: "Сіздерді асыға күтеміз!",
   closingNames: "Амирхан ❤️ Эзоза",
   rsvpTitle: "Тойға келесіз бе?",
-  musicUrl: "/music/wedding-ambient.mp3",
+  musicUrl: "/music/shanyrak-mahabbat-karaoke.mp3",
   parents: {
     bride: { father: "", mother: "" },
     groom: { father: "", mother: "" },

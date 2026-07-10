@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -49,12 +49,12 @@ export function MobileNav() {
               </AnimatePresence>
               <item.icon
                 className={`text-lg relative z-10 transition-colors ${
-                  active === item.id ? "text-gold" : "text-ivory/40"
+                  active === item.id ? "text-gold" : "text-emerald/40"
                 }`}
               />
               <span
                 className={`text-[9px] relative z-10 transition-colors ${
-                  active === item.id ? "text-gold" : "text-ivory/30"
+                  active === item.id ? "text-gold" : "text-emerald/30"
                 }`}
               >
                 {item.label}

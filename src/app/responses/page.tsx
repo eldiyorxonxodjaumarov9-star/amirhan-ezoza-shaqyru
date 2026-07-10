@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -23,7 +23,7 @@ export default function ResponsesPage() {
         <div className="mb-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 font-[family-name:var(--font-montserrat)] text-ivory/50 hover:text-gold text-sm transition-colors"
+            className="inline-flex items-center gap-2 font-[family-name:var(--font-montserrat)] text-emerald/50 hover:text-gold text-sm transition-colors"
           >
             ← Шақыру бетіне қайту
           </Link>
@@ -35,9 +35,9 @@ export default function ResponsesPage() {
         />
 
         {loading ? (
-          <p className="text-center text-ivory/40 font-light py-16">Жүктелуде...</p>
+          <p className="text-center text-emerald/40 font-light py-16">Жүктелуде...</p>
         ) : responses.length === 0 ? (
-          <p className="text-center text-ivory/40 font-light py-16">
+          <p className="text-center text-emerald/40 font-light py-16">
             Әзірге жауаптар мен тілектер жоқ
           </p>
         ) : (

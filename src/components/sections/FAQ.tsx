@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -13,7 +13,7 @@ export function FAQ() {
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
-    <section id="faq" className="section-padding relative bg-forest/20">
+    <section id="faq" className="section-padding relative bg-gold/5">
       <div className="max-w-2xl mx-auto">
         <SectionHeading title="Сұрақ-жауап" subtitle="Жиі қойылатын сұрақтар" />
 
@@ -25,7 +25,7 @@ export function FAQ() {
                   onClick={() => setOpenId(openId === item.id ? null : item.id)}
                   className="w-full flex items-center justify-between p-5 md:p-6 text-left"
                 >
-                  <span className="font-[family-name:var(--font-cormorant)] text-lg text-ivory pr-4">
+                  <span className="font-[family-name:var(--font-cormorant)] text-lg text-emerald pr-4">
                     {item.question}
                   </span>
                   <motion.span
@@ -45,7 +45,7 @@ export function FAQ() {
                       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="font-[family-name:var(--font-montserrat)] text-ivory/60 text-sm px-5 md:px-6 pb-5 md:pb-6 font-light leading-relaxed">
+                      <p className="font-[family-name:var(--font-montserrat)] text-emerald/60 text-sm px-5 md:px-6 pb-5 md:pb-6 font-light leading-relaxed">
                         {item.answer}
                       </p>
                     </motion.div>

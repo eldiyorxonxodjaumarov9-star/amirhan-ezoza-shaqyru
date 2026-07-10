@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -33,8 +33,8 @@ export function Hero() {
       <div
         className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: `radial-gradient(ellipse at 50% 0%, rgba(201,154,61,0.15) 0%, transparent 60%),
-            radial-gradient(ellipse at 80% 80%, rgba(18,58,50,0.8) 0%, transparent 50%)`,
+          backgroundImage: `radial-gradient(ellipse at 50% 0%, rgba(201,154,61,0.12) 0%, transparent 60%),
+            radial-gradient(ellipse at 80% 80%, rgba(245,238,221,0.9) 0%, transparent 50%)`,
         }}
       />
 
@@ -104,7 +104,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1 }}
-          className="font-[family-name:var(--font-montserrat)] text-ivory/70 text-sm md:text-base mt-10 max-w-lg mx-auto font-light leading-relaxed tracking-wide"
+          className="font-[family-name:var(--font-montserrat)] text-emerald/70 text-sm md:text-base mt-10 max-w-lg mx-auto font-light leading-relaxed tracking-wide"
         >
           {config.subtitle}
         </motion.p>

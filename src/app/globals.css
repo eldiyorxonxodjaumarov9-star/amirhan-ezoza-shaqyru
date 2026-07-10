@@ -2,26 +2,30 @@
 
 :root {
   --emerald: #0D352D;
-  --forest: #123A32;
+  --forest: #1A4A40;
   --gold: #C99A3D;
-  --soft-gold: #F2D58A;
+  --soft-gold: #D4A84B;
   --ivory: #FFF8EF;
   --cream: #F5EEDD;
-  --glass: rgba(255, 248, 239, 0.08);
-  --glass-border: rgba(201, 154, 61, 0.25);
-  --background: var(--emerald);
-  --foreground: var(--ivory);
+  --snow: #FFFBF7;
+  --pearl: #FFFFFF;
+  --glass: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(201, 154, 61, 0.35);
+  --background: var(--snow);
+  --foreground: var(--emerald);
 }
 
 @theme inline {
   --color-emerald: #0D352D;
-  --color-forest: #123A32;
+  --color-forest: #1A4A40;
   --color-gold: #C99A3D;
-  --color-soft-gold: #F2D58A;
+  --color-soft-gold: #D4A84B;
   --color-ivory: #FFF8EF;
   --color-cream: #F5EEDD;
-  --color-glass: rgba(255, 248, 239, 0.08);
-  --color-glass-border: rgba(201, 154, 61, 0.25);
+  --color-snow: #FFFBF7;
+  --color-pearl: #FFFFFF;
+  --color-glass: rgba(255, 255, 255, 0.85);
+  --color-glass-border: rgba(201, 154, 61, 0.35);
   --font-display: var(--font-cinzel);
   --font-serif: var(--font-cormorant);
   --font-body: var(--font-montserrat);
@@ -35,12 +39,12 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: var(--gold) var(--emerald);
+  scrollbar-color: var(--gold) var(--cream);
 }
 
 body {
-  background: var(--emerald);
-  color: var(--ivory);
+  background: var(--snow);
+  color: var(--emerald);
   font-family: var(--font-montserrat), system-ui, sans-serif;
   overflow-x: hidden;
 }
@@ -50,7 +54,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--emerald);
+  background: var(--cream);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -59,12 +63,18 @@ body {
 }
 
 ::selection {
-  background: rgba(201, 154, 61, 0.35);
-  color: var(--ivory);
+  background: rgba(201, 154, 61, 0.25);
+  color: var(--emerald);
 }
 
 .luxury-gradient {
-  background: linear-gradient(135deg, #0D352D 0%, #123A32 40%, #0D352D 100%);
+  background: linear-gradient(
+    160deg,
+    #ffffff 0%,
+    #fffbf7 35%,
+    #f5eedd 70%,
+    #ffffff 100%
+  );
 }
 
 .gold-gradient {
@@ -72,30 +82,35 @@ body {
 }
 
 .gold-text {
-  background: linear-gradient(135deg, #F2D58A 0%, #C99A3D 50%, #F2D58A 100%);
+  background: linear-gradient(135deg, #B8862E 0%, #C99A3D 50%, #D4A84B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .name-glow {
-  filter: drop-shadow(0 0 24px rgba(201, 154, 61, 0.3))
-    drop-shadow(0 0 48px rgba(242, 213, 138, 0.15));
+  filter: drop-shadow(0 0 16px rgba(201, 154, 61, 0.25))
+    drop-shadow(0 0 32px rgba(201, 154, 61, 0.12));
 }
 
 .glass-card {
-  background: rgba(255, 248, 239, 0.06);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 154, 61, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 248, 239, 0.1);
+  border: 1px solid rgba(201, 154, 61, 0.28);
+  box-shadow:
+    0 8px 32px rgba(13, 53, 45, 0.06),
+    0 2px 8px rgba(201, 154, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: var(--emerald);
 }
 
 .glass-card-light {
-  background: rgba(255, 248, 239, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 154, 61, 0.3);
+  border: 1px solid rgba(201, 154, 61, 0.35);
   color: var(--emerald);
+  box-shadow: 0 4px 24px rgba(13, 53, 45, 0.05);
 }
 
 .section-padding {
@@ -134,8 +149,8 @@ body {
 }
 
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 154, 61, 0.2); }
-  50% { box-shadow: 0 0 40px rgba(201, 154, 61, 0.5); }
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 154, 61, 0.15); }
+  50% { box-shadow: 0 0 40px rgba(201, 154, 61, 0.3); }
 }
 
 @keyframes spin-slow {
@@ -158,5 +173,5 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: var(--gold) !important;
-  box-shadow: 0 0 0 3px rgba(201, 154, 61, 0.15);
+  box-shadow: 0 0 0 3px rgba(201, 154, 61, 0.12);
 }

@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import {
   Cormorant_Garamond,
   Cinzel,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D352D",
+  themeColor: "#FFFBF7",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -109,9 +109,9 @@ export default function RootLayout({
           position="top-center"
           toastOptions={{
             style: {
-              background: "#123A32",
-              color: "#FFF8EF",
-              border: "1px solid rgba(201, 154, 61, 0.3)",
+              background: "#FFFFFF",
+              color: "#0D352D",
+              border: "1px solid rgba(201, 154, 61, 0.35)",
               fontFamily: "var(--font-montserrat)",
             },
           }}

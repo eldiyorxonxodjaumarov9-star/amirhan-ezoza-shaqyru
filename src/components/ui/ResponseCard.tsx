@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
@@ -25,18 +25,18 @@ export function ResponseCard({ response, index = 0 }: ResponseCardProps) {
         <p className="font-[family-name:var(--font-cinzel)] text-gold text-sm md:text-base tracking-[0.15em] uppercase mb-2">
           {response.guestName}
         </p>
-        <p className="font-[family-name:var(--font-montserrat)] text-ivory/70 text-sm mb-3">
+        <p className="font-[family-name:var(--font-montserrat)] text-emerald/70 text-sm mb-3">
           {attendanceDisplayLabels[response.attendance]}
         </p>
         {response.wishText.trim() && (
           <div className="flex gap-2 items-start mb-4">
             <HiChatBubbleBottomCenter className="text-gold/60 shrink-0 mt-0.5 text-sm" />
-            <p className="font-[family-name:var(--font-cormorant)] text-ivory/85 text-base italic leading-relaxed">
+            <p className="font-[family-name:var(--font-cormorant)] text-emerald/85 text-base italic leading-relaxed">
               &ldquo;{response.wishText}&rdquo;
             </p>
           </div>
         )}
-        <p className="font-[family-name:var(--font-montserrat)] text-ivory/35 text-xs tracking-wide">
+        <p className="font-[family-name:var(--font-montserrat)] text-emerald/35 text-xs tracking-wide">
           {formatResponseDate(response.submittedAt)}
         </p>
       </GlassCard>

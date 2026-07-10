@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { HiCalendar, HiClock, HiMapPin } from "react-icons/hi2";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -29,7 +29,7 @@ export function EventInfo() {
   };
 
   return (
-    <section id="event" className="section-padding relative bg-forest/20">
+    <section id="event" className="section-padding relative bg-gold/5">
       <div className="max-w-5xl mx-auto">
         <SectionHeading title="Той туралы" subtitle="Барлық маңызды ақпарат" />
 
@@ -53,7 +53,7 @@ export function EventInfo() {
                     <p className="font-[family-name:var(--font-cinzel)] text-gold text-xs tracking-[0.2em] uppercase mb-2">
                       {item.label}
                     </p>
-                    <p className="font-[family-name:var(--font-montserrat)] text-ivory/80 text-sm leading-relaxed font-light whitespace-pre-line">
+                    <p className="font-[family-name:var(--font-montserrat)] text-emerald/80 text-sm leading-relaxed font-light whitespace-pre-line">
                       {getValue(item.key)}
                     </p>
                   </div>

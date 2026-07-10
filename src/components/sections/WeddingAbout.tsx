@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -21,7 +21,7 @@ const formatNumber = (value: number) => String(value).padStart(2, "0");
 
 function CountdownMiniCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="rounded-xl border border-gold/25 bg-emerald/50 py-4 md:py-5 px-2 text-center relative overflow-hidden group transition-colors hover:border-gold/40">
+    <div className="rounded-xl border border-gold/25 bg-cream/70 py-4 md:py-5 px-2 text-center relative overflow-hidden group transition-colors hover:border-gold/40">
       <AnimatePresence mode="popLayout">
         <motion.span
           key={value}
@@ -35,7 +35,7 @@ function CountdownMiniCard({ value, label }: { value: string; label: string }) {
           {value}
         </motion.span>
       </AnimatePresence>
-      <span className="font-[family-name:var(--font-montserrat)] text-ivory/50 text-[10px] md:text-xs tracking-[0.2em] uppercase mt-2 block">
+      <span className="font-[family-name:var(--font-montserrat)] text-emerald/50 text-[10px] md:text-xs tracking-[0.2em] uppercase mt-2 block">
         {label}
       </span>
     </div>
@@ -156,7 +156,7 @@ export function WeddingAbout() {
 
   return (
     <section id="countdown" className="section-padding relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-emerald via-forest/30 to-emerald" />
+      <div className="absolute inset-0 bg-gradient-to-b from-snow via-cream/40 to-pearl" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4">
         <ScrollReveal>
@@ -171,7 +171,7 @@ export function WeddingAbout() {
                   <p className="font-[family-name:var(--font-montserrat)] text-gold text-xs md:text-sm tracking-[0.15em] uppercase mb-2 md:mb-3">
                     {item.label}
                   </p>
-                  <p className="font-[family-name:var(--font-cormorant)] text-ivory text-lg md:text-xl lg:text-2xl font-light leading-relaxed whitespace-pre-line">
+                  <p className="font-[family-name:var(--font-cormorant)] text-emerald text-lg md:text-xl lg:text-2xl font-light leading-relaxed whitespace-pre-line">
                     {item.value}
                   </p>
                   <GoldenDivider className="!my-6 md:!my-8" withOrnament={false} />
@@ -185,7 +185,7 @@ export function WeddingAbout() {
                   ? "Той басталды!"
                   : "Тойдың басталуына қалды"}
               </h3>
-              <p className="font-[family-name:var(--font-montserrat)] text-ivory/60 text-sm font-light mb-8 md:mb-10">
+              <p className="font-[family-name:var(--font-montserrat)] text-emerald/60 text-sm font-light mb-8 md:mb-10">
                 Күтеміз сіздерді
               </p>
 
