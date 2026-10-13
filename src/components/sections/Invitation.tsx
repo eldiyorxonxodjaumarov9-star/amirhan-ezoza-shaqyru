@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -39,7 +39,7 @@ export function Invitation() {
                   <p className="font-[family-name:var(--font-cinzel)] text-gold text-xs tracking-[0.3em] uppercase mb-4">
                     {config.parentsTitle}
                   </p>
-                  <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-emerald tracking-wide">
+                  <p className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl text-emerald tracking-wide whitespace-pre-line">
                     {config.parentsFamily}
                   </p>
                 </div>
@@ -61,7 +61,7 @@ export function Invitation() {
                 <div className="flex items-center justify-center gap-6">
                   <Ornament variant="geometric" />
                   <p className="font-[family-name:var(--font-playfair)] text-soft-gold text-2xl md:text-3xl italic name-glow">
-                    {config.groomName} & {config.brideName}
+                    {config.groomName} + {config.brideName}
                   </p>
                   <Ornament variant="geometric" />
                 </div>

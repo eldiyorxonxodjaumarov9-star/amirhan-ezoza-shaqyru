@@ -1,4 +1,4 @@
-﻿import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import {
   Cormorant_Garamond,
   Cinzel,
@@ -38,21 +38,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Эзоза & Амирхан — Үйлену тойы",
+  title: "Әмірханқожа + Эзоза — Үйлену тойы",
   description:
-    "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз. Эзоза мен Амирханның шаңырақ көтеру тойына шақыру.",
+    "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз. Әмірханқожа мен Эзозаның шаңырақ көтеру тойына шақыру.",
   keywords: ["үйлену тойы", "шақыру", "Қазақстан", "той", "wedding", "invitation"],
-  authors: [{ name: "Эзоза & Амирхан" }],
+  authors: [{ name: "Әмірханқожа + Эзоза" }],
   openGraph: {
-    title: "Эзоза & Амирхан — Үйлену тойы",
+    title: "Әмірханқожа + Эзоза — Үйлену тойы",
     description: "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз",
     type: "website",
     locale: "kk_KZ",
-    siteName: "Эзоза & Амирхан Wedding",
+    siteName: "Әмірханқожа + Эзоза Wedding",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Эзоза & Амирхан — Үйлену тойы",
+    title: "Әмірханқожа + Эзоза — Үйлену тойы",
     description: "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз",
   },
   robots: { index: true, follow: true },
@@ -82,7 +82,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Event",
-              name: "Эзоза & Амирхан — Үйлену тойы",
+              name: "Әмірханқожа + Эзоза — Үйлену тойы",
               startDate: "2026-11-11T17:00:00+05:00",
               eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
               eventStatus: "https://schema.org/EventScheduled",

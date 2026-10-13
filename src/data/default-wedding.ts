@@ -2,18 +2,18 @@ import { WeddingConfig } from "@/types";
 
 export const defaultWeddingConfig: WeddingConfig = {
   brideName: "Эзоза",
-  groomName: "Амирхан",
+  groomName: "Әмірханқожа",
   weddingDate: "2026-11-11T17:00:00+05:00",
-  displayDate: "11 Қараша 2026",
+  displayDate: "11 Ноябрь 2026",
   subtitle:
     "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз.",
   invitationTitle: "ҮЙЛЕНУ ТОЙЫНА ШАҚЫРУ",
   parentsTitle: "ТОЙ ИЕЛЕРІ",
-  parentsFamily: "Муминходжаевтар жанұясы",
+  parentsFamily: "Муминходжаевтар жанұясы\nИмомходжа Шозиста",
   countdownTitle: "Тойдың басталуына қалды",
   mapButtonText: "Картадан ашу",
   closingTitle: "Сіздерді асыға күтеміз!",
-  closingNames: "Амирхан ❤️ Эзоза",
+  closingNames: "Әмірханқожа + Эзоза",
   rsvpTitle: "Тойға келесіз бе?",
   musicUrl: "/music/shanyrak-mahabbat-karaoke.mp3",
   parents: {
@@ -24,7 +24,7 @@ export const defaultWeddingConfig: WeddingConfig = {
 бауырлар, құда-жекжат,
 достар және қадірлі қонақтар!
 
-Сіздерді Амирхан мен Эзозаның
+Сіздерді Әмірханқожа мен Эзозаның
 шаңырақ көтеру тойының
 қадірлі қонағы болуға
 шын жүректен шақырамыз.
@@ -33,7 +33,7 @@ export const defaultWeddingConfig: WeddingConfig = {
 қуанышымызды бірге бөліссеңіздер,
 біз үшін үлкен мәртебе болар еді.`,
   event: {
-    date: "11 Қараша 2026",
+    date: "11 Ноябрь 2026",
     time: "17:00",
     venue: "“SUGDIYONA” мейрамханасы",
     address: "Жаңабазар қорғаны",
@@ -46,12 +46,13 @@ export const defaultWeddingConfig: WeddingConfig = {
   gift: {
     bankName: "Kaspi Bank",
     cardNumber: "4400 4300 1234 5678",
-    cardHolder: "Амирхан М.",
+    cardHolder: "Әмірханқожа М.",
     message:
       "Сіздердің қатысуыңыз — бізге ең үлкен сыйлық. Егер тілек жібергіңіз келсе, төмендегі деректерді пайдалана аласыз.",
   },
   family: [
     { id: "1", name: "Муминходжаевтар жанұясы", role: "Той иелері", relation: "parents" },
+    { id: "2", name: "Имомходжа Шозиста", role: "Той иелері", relation: "parents" },
   ],
   faq: [
     {

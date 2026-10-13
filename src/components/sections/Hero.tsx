@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -80,8 +80,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
         >
-          <h1 className="font-[family-name:var(--font-cormorant)] text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-none tracking-wide">
-            <span className="gold-text name-glow inline-block">{config.brideName}</span>
+          <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none tracking-wide">
+            <span className="gold-text name-glow inline-block">{config.groomName}</span>
           </h1>
           <motion.div
             className="my-4 md:my-6 flex items-center justify-center gap-4"
@@ -91,12 +91,12 @@ export function Hero() {
           >
             <div className="w-12 h-px bg-gold/50" />
             <span className="font-[family-name:var(--font-playfair)] text-soft-gold text-2xl md:text-3xl italic">
-              &
+              +
             </span>
             <div className="w-12 h-px bg-gold/50" />
           </motion.div>
-          <h1 className="font-[family-name:var(--font-cormorant)] text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-none tracking-wide">
-            <span className="gold-text name-glow inline-block">{config.groomName}</span>
+          <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none tracking-wide">
+            <span className="gold-text name-glow inline-block">{config.brideName}</span>
           </h1>
         </motion.div>
 
