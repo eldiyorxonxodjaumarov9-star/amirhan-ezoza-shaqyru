@@ -35,13 +35,13 @@ export const defaultWeddingConfig: WeddingConfig = {
   event: {
     date: "11 Ноябрь 2026",
     time: "17:00",
-    venue: "“So'g'diyona” мейрамханасы",
+    venue: "“Сўғдиёна” мейрамханасы",
     address: "Жаңабазар қорғаны",
     dressCode: "",
     parking: "",
     mapLat: 42.315,
     mapLng: 69.597,
-    mapQuery: "\"So'g'diyona\" мейрамханасы, Жаңабазар қорғаны, Шымкент",
+    mapQuery: "\"Сўғдиёна\" мейрамханасы, Жаңабазар қорғаны, Шымкент",
   },
   gift: {
     bankName: "Kaspi Bank",
@@ -78,7 +78,7 @@ export const defaultWeddingConfig: WeddingConfig = {
     {
       id: "5",
       question: "Мейрамхана қайда орналасқан?",
-      answer: "Жаңабазар қорғанында орналасқан \"So'g'diyona\" мейрамханасы.",
+      answer: "Жаңабазар қорғанында орналасқан \"Сўғдиёна\" мейрамханасы.",
     },
   ],
   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",

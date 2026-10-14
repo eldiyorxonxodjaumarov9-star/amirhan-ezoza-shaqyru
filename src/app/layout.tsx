@@ -88,7 +88,7 @@ export default function RootLayout({
               eventStatus: "https://schema.org/EventScheduled",
               location: {
                 "@type": "Place",
-                name: "\"So'g'diyona\" мейрамханасы",
+                name: "\"Сўғдиёна\" мейрамханасы",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Жаңабазар қорғаны",
