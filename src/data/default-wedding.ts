@@ -9,7 +9,7 @@ export const defaultWeddingConfig: WeddingConfig = {
     "Біздің ең бақытты күнімізге куә болып, қуанышымызды бірге бөлісуге шақырамыз.",
   invitationTitle: "ҮЙЛЕНУ ТОЙЫНА ШАҚЫРУ",
   parentsTitle: "ТОЙ ИЕЛЕРІ",
-  parentsFamily: "Муминходжаевтар жанұясы\nИмомходжа Шозиста",
+  parentsFamily: "Муминходжаевтар жанұясы\nИмомходжа Шохиста",
   countdownTitle: "Тойдың басталуына қалды",
   mapButtonText: "Картадан ашу",
   closingTitle: "Сіздерді асыға күтеміз!",
@@ -35,13 +35,13 @@ export const defaultWeddingConfig: WeddingConfig = {
   event: {
     date: "11 Ноябрь 2026",
     time: "17:00",
-    venue: "“SUGDIYONA” мейрамханасы",
+    venue: "“So'g'diyona” мейрамханасы",
     address: "Жаңабазар қорғаны",
     dressCode: "",
     parking: "",
     mapLat: 42.315,
     mapLng: 69.597,
-    mapQuery: '"SUGDIYONA" мейрамханасы, Жаңабазар қорғаны, Шымкент',
+    mapQuery: "\"So'g'diyona\" мейрамханасы, Жаңабазар қорғаны, Шымкент",
   },
   gift: {
     bankName: "Kaspi Bank",
@@ -52,7 +52,7 @@ export const defaultWeddingConfig: WeddingConfig = {
   },
   family: [
     { id: "1", name: "Муминходжаевтар жанұясы", role: "Той иелері", relation: "parents" },
-    { id: "2", name: "Имомходжа Шозиста", role: "Той иелері", relation: "parents" },
+    { id: "2", name: "Имомходжа Шохиста", role: "Той иелері", relation: "parents" },
   ],
   faq: [
     {
@@ -78,7 +78,7 @@ export const defaultWeddingConfig: WeddingConfig = {
     {
       id: "5",
       question: "Мейрамхана қайда орналасқан?",
-      answer: 'Жаңабазар қорғанында орналасқан "SUGDIYONA" мейрамханасы.',
+      answer: "Жаңабазар қорғанында орналасқан \"So'g'diyona\" мейрамханасы.",
     },
   ],
   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
